@@ -15,6 +15,7 @@
 		E5A840E61DCB1183006001EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A840E41DCB1183006001EF /* LaunchScreen.storyboard */; };
 		E5A840F11DCB1183006001EF /* YSTouchIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A840F01DCB1183006001EF /* YSTouchIDTests.m */; };
 		E5A840FC1DCB1183006001EF /* YSTouchIDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A840FB1DCB1183006001EF /* YSTouchIDUITests.m */; };
+		E5A8410C1DCB11E6006001EF /* YSTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A8410B1DCB11E6006001EF /* YSTouchID.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E5A840F71DCB1183006001EF /* YSTouchIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSTouchIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A840FB1DCB1183006001EF /* YSTouchIDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSTouchIDUITests.m; sourceTree = "<group>"; };
 		E5A840FD1DCB1183006001EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A8410A1DCB11E6006001EF /* YSTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSTouchID.h; sourceTree = "<group>"; };
+		E5A8410B1DCB11E6006001EF /* YSTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSTouchID.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		E5A840D51DCB1183006001EF /* YSTouchID */ = {
 			isa = PBXGroup;
 			children = (
+				E5A841091DCB11C7006001EF /* YSTouchID */,
 				E5A840D91DCB1183006001EF /* AppDelegate.h */,
 				E5A840DA1DCB1183006001EF /* AppDelegate.m */,
 				E5A840DC1DCB1183006001EF /* ViewController.h */,
@@ -138,6 +142,15 @@
 				E5A840FD1DCB1183006001EF /* Info.plist */,
 			);
 			path = YSTouchIDUITests;
+			sourceTree = "<group>";
+		};
+		E5A841091DCB11C7006001EF /* YSTouchID */ = {
+			isa = PBXGroup;
+			children = (
+				E5A8410A1DCB11E6006001EF /* YSTouchID.h */,
+				E5A8410B1DCB11E6006001EF /* YSTouchID.m */,
+			);
+			path = YSTouchID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 			files = (
 				E5A840DE1DCB1183006001EF /* ViewController.m in Sources */,
 				E5A840DB1DCB1183006001EF /* AppDelegate.m in Sources */,
+				E5A8410C1DCB11E6006001EF /* YSTouchID.m in Sources */,
 				E5A840D81DCB1183006001EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YSTouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yanghandsome.YSTouchID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YSTouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yanghandsome.YSTouchID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
